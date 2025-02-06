@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เซอร์ไพรส์วันเกิด</title>
+    <style>
+        body {
+            background-color: #87CEFA;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 30px;
+            padding: 10px;
+        }
+        h1 {
+            color: white;
+            font-size: 2em;
+        }
+        .message {
+            font-size: 1.2em;
+            color: white;
+            margin-top: 15px;
+        }
+        .button {
+            background-color: white;
+            color: #87CEFA;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .images img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .video {
+            margin-top: 15px;
+        }
+        video {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            .button {
+                font-size: 1.2em;
+                padding: 15px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>สุขสันต์วันเกิด 𝙱𝚎𝚎𝚃𝚊𝙶𝚎𝚗 ☾⋆꙳⛧!</h1>
+        <div class="message">ขอให้มีความสุขมาก ๆ สมหวังทุกประการ 🎂🎉</div>
+        <button class="button" onclick="showSurprise()">กดเพื่อรับคำอวยพรพิเศษ</button>
+        <div id="surprise" class="message" style="display: none;">ขอให้ปีนี้เป็นปีที่ดีที่สุดของพี่บีนะคะ 🌙🤍✨</div>
+        
+        <div class="images">
+            <img src="Snapinst.app_476300919_18342320428149104_3349150854442916758_n_1080.jpg" alt="Birthday Image 1">
+            <img src="Snapinst.app_476321771_18342320389149104_4932443316287274364_n_1080.jpg" alt="Birthday Image 2">
+        </div>
+
+        <div class="video">
+            <video src="760366682.501103.mp4" controls></video>
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
